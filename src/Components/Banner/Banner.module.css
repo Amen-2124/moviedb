@@ -70,3 +70,87 @@ background-color: rgba( 51,51,51,0.5);
     );
     width: 100%;
 }
+
+
+
+
+
+
+/* ---------- Responsive (height stays fixed at 570px) ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .contents {
+    padding-top: 160px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 19px;
+    max-width: 600px;
+    height: 70px;
+  }
+  .logoImg {
+    width: 130px;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+  .contents {
+    padding-top: 130px;
+    padding-left: 12px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 15px;
+    max-width: 100%;
+    height: 60px;
+  }
+  .logoImg {
+    width: 100px;
+  }
+  .button,
+  .buttonSecondary {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 14px;
+  }
+  .fadeBottom {
+    height: 7rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .contents {
+    padding-top: 100px;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .description {
+    font-size: 13px;
+    height: 50px;
+  }
+  .logoImg {
+    width: 80px;
+  }
+  .button,
+  .buttonSecondary {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 13px;
+  }
+  .buttonContainer {
+    gap: 0.6rem;
+  }
+  .fadeBottom {
+    height: 5rem;
+  }
+}

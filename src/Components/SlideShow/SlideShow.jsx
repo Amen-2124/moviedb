@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+
 function SlideShow({ title, movies }) {
   return (
     <div>
@@ -14,10 +15,29 @@ function SlideShow({ title, movies }) {
         <Swiper
           modules={[Navigation]}
           navigation
-          spaceBetween={100}    
+          spaceBetween={10}
           slidesPerView={5.1}
+          breakpoints={{
+            0: {
+              slidesPerView: 2.2,
+              spaceBetween: 6,
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 100,
+            },
+          
+          }}
         >
-          {/* Array.isArray ማድረጋችን movies አሬይ መሆኑን ያረጋግጣል */}
+          {/* Array.isArray */}
           {Array.isArray(movies) && movies.map((movie) => (
             <SwiperSlide key={movie.id}>
               <MovieCard movie={movie} />

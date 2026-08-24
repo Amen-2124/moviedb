@@ -135,3 +135,86 @@ pointer-events: auto;
 transform: scale(1.05);
 }
 
+
+
+/* ---------- Responsive ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cardWrapper {
+    width: 200px;
+    height: 150px;
+  }
+  .poster {
+    width: 200px;
+    height: 110px;
+  }
+  .hoverCard {
+    width: 260px;
+    min-height: 260px;
+  }
+  .hoverImage {
+    height: 110px;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+  .cardWrapper {
+    width: 160px;
+    height: 110px;
+  }
+  .poster {
+    width: 150px;
+    height: 85px;
+  }
+  .hoverCard {
+    width: 220px;
+    min-height: 220px;
+    top: -30px;
+  }
+  .hoverImage {
+    height: 90px;
+  }
+  .buttonsRow svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .metaRow {
+    font-size: 12px;
+  }
+  .genres {
+    font-size: 11px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .cardWrapper {
+    width: 130px;
+    height: 90px;
+  }
+  .poster {
+    width: 120px;
+    height: 68px;
+  }
+  .hoverCard {
+    width: 180px;
+    min-height: 190px;
+    top: -20px;
+  }
+  .hoverImage {
+    height: 75px;
+  }
+  .buttonsRow {
+    gap: 4px;
+  }
+  .buttonsRow svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .badge {
+    font-size: 10px;
+  }
+}
+
